@@ -44,8 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         taskList.appendChild(taskItem);
-
-        // Adicionar eventos aos botões
+        
         taskItem.querySelector('.complete-btn').addEventListener('click', () => toggleComplete(taskItem, task));
         taskItem.querySelector('.edit-btn').addEventListener('click', () => editTask(taskItem, task));
         taskItem.querySelector('.delete-btn').addEventListener('click', () => deleteTask(taskItem, task));
